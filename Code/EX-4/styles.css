@@ -1,0 +1,312 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, rgb(227, 241, 253), rgb(140, 187, 187));
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left_main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-right: 2px solid rgb(170, 207, 207);
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 10px;
+    color: rgb(19, 133, 133);
+    cursor: pointer;
+}
+h1{
+    color: black;
+    margin-right: 20px;
+}
+.Dashboard{
+    background-color: rgb(19, 133, 133);
+    margin-right: 20px;
+    padding-left: 10px;
+    margin-left: -10px;
+    border-radius: 15px;
+    color: white;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    display: grid;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 40px;
+    box-sizing: border-box; 
+}
+  .header .left h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(19, 133, 133);
+  }
+  
+  .header .left h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .header .right {
+    display: flex;
+    margin: 0%;
+    align-items: center;
+    gap: 20px;
+    margin-left: 105%;
+  }
+  
+  .header .right i {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .header .right .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header .right .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .header .right .profile span {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+  }
+.sections{
+    display: grid;
+    grid-template-columns: 90% 47%;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+}
+.calender{
+    display: flex;
+    flex-direction: column;
+}
+.calender .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.calender .match{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.calender img{
+    width: 80px;
+    height: 85px;
+}
+.statistic{
+  display: flex;
+  flex-direction: column;
+
+}
+.statistic .top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.results-container {
+  background-image: linear-gradient(to bottom, rgb(42, 157, 157), white);
+  border-radius: 8px;
+  padding: 20px;
+  width: 340px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.progress-bar {
+  display: flex;
+  height: 10px;
+  width: 100%;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.wins {
+  width: 61.1%;
+  background-color: #2e8b57;
+}
+
+.draws {
+  width: 22.2%;
+  background-color: #ffa500;
+}
+
+.losses {
+  width: 16.7%;
+  background-color: #ff6347;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  text-align: center;
+  flex: 1;
+}
+
+.label p {
+  margin: 5px 0;
+}
+
+.label span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.label:not(:last-child) {
+  border-right: 1px solid #dcdcdc;
+}
+.standing{
+  display: flex;
+  flex-direction: column;
+}
+.standing .top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.standing .table{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.team1, .team2, .team3, .team4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 30px;
+}
+.possesion i{
+  border: 1px solid black;
+  width: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  align-self: center;
+  background-image: linear-gradient(to right, rgb(153, 1, 153), rgb(255, 235, 235));
+}
+.price i{
+  border: 1px solid black;
+  width: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  align-self: center;
+  background-image: linear-gradient(to right, rgb(246, 166, 179), rgb(250, 241, 241));
+}
+.trasfer_budget i{
+  border: 1px solid black;
+  width: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  align-self: center;
+  background-image: linear-gradient(to right, gold, white);
+}
+.avg_score i{
+  border: 1px solid black;
+  width: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  align-self: center;
+  background-image: linear-gradient(to right, rgb(19, 133, 133), white);
+}
+.possesion, .price, .trasfer_budget, .avg_score {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.calender, .statistic, .standing, .item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.168);
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header .left,
+  .header .right {
+    margin: 10px 0;
+  }
+
+  .sections {
+    grid-template-columns: 1fr;
+  }
+
+  .left_main {
+    margin-left: 0;
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .left h1 {
+    font-size: 1.8rem;
+  }
+
+  .results-container {
+    padding: 15px;
+  }
+
+  .progress-bar {
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .left h1 {
+    font-size: 1.5rem;
+  }
+
+  .header .right {
+    flex-direction: column;
+  }
+
+  .sections {
+    padding: 10px;
+  }
+
+  .calender img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .results-container {
+    padding: 10px;
+  }
+}
